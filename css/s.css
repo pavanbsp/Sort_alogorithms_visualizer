@@ -20,9 +20,6 @@ nav {
   -ms-grid-columns: 45% 55%;
       grid-template-columns: 45% 55%;
   padding: 0% 0%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   text-transform: uppercase;
   overflow: hidden;
 }
@@ -237,57 +234,6 @@ section #Info_Cont2 {
   padding: 20%;
 }
 
-section #ui-dialog {
-  top: 0;
-  left: 0;
-  padding: .2em;
-  border: 21px;
-}
-
-section #ui-dialog #ui-dialog-titlebar {
-  border: 21px;
-  background-color: red;
-}
-
-section #ui-dialog #ui-dialog-content {
-  border: 0;
-  padding: 20px;
-  font-size: 18px;
-  color: blue;
-  background-color: orange;
-  overflow: hidden;
-}
-
-section #ui-dialog #ui-dialog-buttonpane {
-  text-align: left;
-  margin-top: .1em;
-  height: 0.1em;
-  background-color: orange;
-  background-color: gold;
-}
-
-section #ui-dialog #ui-dialog-buttonpane #ui-dialog-buttonset {
-  float: right;
-}
-
-section #ui-dialog #ui-dialog-buttonpane button {
-  margin: .5em .4em .5em 0;
-  cursor: pointer;
-}
-
-section #ui-dialog #ui-resizable-se {
-  width: 12px;
-  height: 12px;
-  right: -5px;
-  bottom: -5px;
-  background-position: 16px 16px;
-}
-
-section #ui-dialog #ui-draggable-handle {
-  -ms-touch-action: none;
-  touch-action: none;
-}
-
 article {
   height: 500px;
   background-color: PowderBlue;
@@ -324,7 +270,7 @@ article #info #left {
 }
 
 article #info #left p {
-  font-size: large;
+  font-size: larger;
 }
 
 article #info #right {
@@ -344,7 +290,7 @@ article #info #right h1 {
 
 article #info #right p, article #info #right a {
   padding-top: 20px;
-  font-size: medium;
+  font-size: large;
   font-weight: 600;
 }
 
@@ -364,6 +310,10 @@ footer p {
 footer a {
   font-size: 35px;
   color: #000;
+}
+
+.hide {
+  display: none;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
