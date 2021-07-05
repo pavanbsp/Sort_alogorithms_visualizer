@@ -1,23 +1,24 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=0.8" />
-    <link rel="stylesheet" href="./css/s.css">
+    <link rel="stylesheet" href="./s.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/jquery-ui.js" type="text/javascript"></script>
-  <link href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/themes/blitzer/jquery-ui.css"
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/jquery-ui.js" type="text/javascript"></script>
+    <link href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/themes/blitzer/jquery-ui.css"
       rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
-      rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+        rel="stylesheet"
     />
     <title>Sort Visualizer</title>   
 </head>
@@ -84,17 +85,18 @@
                         <option value="50">50</option>
                         <option value="75">75</option>
                         <option value="100">100</option>
-                      </select>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                Speed &nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <select id="a_speed">   
-                      <option value="1">0.25x</option>
-                      <option value="2">0.5x</option>
-                      <option value="3" selected="selected">1x</option>
-                      <option value="4">2x</option>
-                      <option value="5">4x</option>
-                    </select></a>
+                    </select>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Speed &nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select id="a_speed">   
+                        <option value="1">0.25x</option>
+                        <option value="2">0.5x</option>
+                        <option value="3" selected="selected">1x</option>
+                        <option value="4">2x</option>
+                        <option value="5">4x</option>
+                    </select>
+                </a>
                 <div class="right">
                     <button id="new" style="width: 280px;height: 50px;">Reset array</button>
                 </div>
@@ -110,61 +112,61 @@
         </nav>
     </header>
 
-    <section>
-
-        <div id="Info_Cont1">
-        </div>
-
-        <div id="array_container">
-        </div>
-
-        <div id="Info_Cont2">
-        </div>
-
-        <div id="j_dialog" title="">
-            <p>🟨 - Unsorted<br><br>🟦 - Comparing<br><br>🟥 - Swapping<br><br>🟩 - Sorted<br><br></p>
-            <p style="margin-top: 10px; color: midnightblue;">This message will auto-close in <span id="number">NUMBER</span> seconds.</p>
-        </div>
-        
-    </section>
-
-    <article>
-
-        <div id="description">
-            <h1 id="demo">Select an Algorithm</h1>
-        </div>
-        <div id = "info">
-            <div id = "left">
-                <p id = "sort">A Sorting Algorithm is used to rearrange a given array or list elements according to a comparison operator on the elements. The comparison operator is used to decide the new order of element in the respective data structure.</p>
-             </div>
-             
-             <div id = "right">
-                <h1>Performance</h1>
-                <p>Worst-case time complexity&nbsp;&nbsp;<a id="w"></a></p>	
-                <p>Average time complexity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a id="avg"></a></p>	
-                <p>Best-case time complexity&nbsp;&nbsp;&nbsp;&nbsp;<a id="bc"></a></p>	
-                <p>Worst-case space complexity<a id="wc"></a></p>	
-             </div>
-        </div>
-
-    </article>
-
-    <footer>
-       <p style="font-weight: 400;">Built with ❤️ by&nbsp;
+    <div id="j_dialog" title="">
+        <p>🟨 - Unsorted<br><br>🟦 - Comparing<br><br>🟥 - Swapping<br><br>🟩 - Sorted<br><br></p>
+        <p style="margin-top: 10px; color: midnightblue;">This message will auto-close in <span id="number">NUMBER</span> seconds.</p>
+      </div>
+  
+      <section>
+  
+          <div id="Info_Cont1">
+          </div>
+  
+          <div id="array_container">
+              
+          </div>
+  
+          <div id="Info_Cont2">
+          </div>
+  
+      </section>
+  
+      <article>
+          <div id="description">
+              <h1 id="demo">Select an Algorithm</h1>
+          </div>
+          <div id = "info">
+              <div id = "left">
+                  <p id = "sort">A Sorting Algorithm is used to rearrange a given array or list elements according to a comparison operator on the elements. The comparison operator is used to decide the new order of element in the respective data structure.</p>
+               </div>
+               
+               <div id = "right">
+                  <h1>Performance</h1>
+                  <p>Worst-case time complexity&nbsp;&nbsp;<a id="w"></a></p>	
+                  <p>Average time complexity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a id="avg"></a></p>	
+                  <p>Best-case time complexity&nbsp;&nbsp;&nbsp;&nbsp;<a id="bc"></a></p>	
+                  <p>Worst-case space complexity<a id="wc"></a></p>	
+               </div>
+          </div>
+  
+      </article>
+  
+      <footer>
+         <p style="font-weight: 400;">Built with ❤️ by&nbsp;
             <a href="https://www.linkedin.com/in/pavan-boina/" target="blank">Pavan Boina</a>
         </p>
-    </footer>
-
-    <script src="./scripts/main.js"></script>   
-    <script src="./scripts/visualizations.js"></script> 
-
-    <script src="./scripts/bubble_sort.js"></script>
-    <script src="./scripts/selection_sort.js"></script>
-    <script src="./scripts/insertion_sort.js"></script>
-    <script src="./scripts/merge_sort.js"></script>
-    <script src="./scripts/quick_sort.js"></script>
-    <script src="./scripts/heap_sort.js"></script>
-
-</body>
-
-</html>
+      </footer>
+  
+      <script src="./scripts/main.js"></script>   
+      <script src="./scripts/visualizations.js"></script> 
+  
+      <script src="./scripts/bubble_sort.js"></script>
+      <script src="./scripts/selection_sort.js"></script>
+      <script src="./scripts/insertion_sort.js"></script>
+      <script src="./scripts/merge_sort.js"></script>
+      <script src="./scripts/quick_sort.js"></script>
+      <script src="./scripts/heap_sort.js"></script>
+  
+  </body>
+  
+  </html>
