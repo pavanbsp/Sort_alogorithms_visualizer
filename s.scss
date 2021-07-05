@@ -19,9 +19,7 @@ nav
     display: grid;
     width: 100%;
     grid-template-columns: 45% 55%;
-    //column-gap: 8%;
     padding: 0% 0%;
-    height: fit-content;
     text-transform: uppercase;
     overflow: hidden;
     .left
@@ -191,49 +189,6 @@ section
     {
         padding: 20%;
     }
-    #ui-dialog {
-        top: 0;
-        left: 0;
-        padding: .2em;
-        border:21px;
-        #ui-dialog-titlebar {
-            border:21px;
-            background-color: red;
-        }
-        #ui-dialog-content {
-            border: 0;
-            padding: 20px;
-            font-size:18px;
-            color:blue;
-            background-color: orange;
-            overflow: hidden;
-        }
-        #ui-dialog-buttonpane {
-            text-align: left;
-            margin-top: .1em;
-            height: 0.1em;
-            background-color: orange;
-            background-color: gold;
-            #ui-dialog-buttonset {
-                float: right;
-            }
-            button {
-                margin: .5em .4em .5em 0;
-                cursor: pointer;
-            }
-        }
-        #ui-resizable-se {
-            width: 12px;
-            height: 12px;
-            right: -5px;
-            bottom: -5px;
-            background-position: 16px 16px;
-        }
-        #ui-draggable-handle {
-            -ms-touch-action: none;
-            touch-action: none;
-        }
-    }
 }
 
 article{
@@ -265,7 +220,7 @@ article{
             overflow: hidden;
             font-weight: bold;
             p{
-                font-size: large;
+                font-size: larger;
             }
         }
         #right{
@@ -282,7 +237,7 @@ article{
             }
             p,a{
                 padding-top: 20px;
-                font-size: medium;
+                font-size: large;
                 font-weight: 600;
             }
         }
@@ -303,6 +258,11 @@ footer{
         font-size: 35px;
         color: #000;
     }
+}
+
+.hide
+{
+    display: none;
 }
 
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
