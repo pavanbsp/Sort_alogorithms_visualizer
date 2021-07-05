@@ -1,0 +1,392 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: large;
+  font-weight: bold;
+}
+
+body {
+  background-color: black;
+}
+
+nav {
+  position: fixed;
+  background-color: #1b1b1b;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: 45% 55%;
+      grid-template-columns: 45% 55%;
+  padding: 0% 0%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+nav .left {
+  text-align: center;
+  padding: 5% 0%;
+}
+
+nav .left .nav-heading {
+  font-size: 50px;
+  margin-top: 20px;
+  margin-left: 10px;
+  -webkit-animation: colorchange 10s infinite alternate;
+          animation: colorchange 10s infinite alternate;
+}
+
+@-webkit-keyframes colorchange {
+  0% {
+    color: chartreuse;
+  }
+  10% {
+    color: violet;
+  }
+  20% {
+    color: indigo;
+  }
+  30% {
+    color: brown;
+  }
+  40% {
+    color: green;
+  }
+  50% {
+    color: yellow;
+  }
+  60% {
+    color: orange;
+  }
+  70% {
+    color: brown;
+  }
+  80% {
+    color: floralwhite;
+  }
+  90% {
+    color: hotpink;
+  }
+  100% {
+    color: white;
+  }
+}
+
+@keyframes colorchange {
+  0% {
+    color: chartreuse;
+  }
+  10% {
+    color: violet;
+  }
+  20% {
+    color: indigo;
+  }
+  30% {
+    color: brown;
+  }
+  40% {
+    color: green;
+  }
+  50% {
+    color: yellow;
+  }
+  60% {
+    color: orange;
+  }
+  70% {
+    color: brown;
+  }
+  80% {
+    color: floralwhite;
+  }
+  90% {
+    color: hotpink;
+  }
+  100% {
+    color: white;
+  }
+}
+
+nav .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 20px;
+  text-transform: uppercase;
+}
+
+nav .right #a_size {
+  width: 130px;
+}
+
+nav .right #a_speed {
+  width: 130px;
+}
+
+nav .right #new {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  text-align: center;
+  padding: 14% 0% 0% 0%;
+  font-size: 20px;
+  margin-left: 200px;
+  padding-top: 5px;
+  text-transform: uppercase;
+}
+
+nav .right #new:hover {
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: yellowgreen;
+  color: black;
+}
+
+nav .right .algos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (16.66667%)[6];
+      grid-template-columns: repeat(6, 16.66667%);
+  place-content: center;
+  padding: 2% 0%;
+  margin-right: -30px;
+}
+
+nav .right .algos button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  padding: 5% 0%;
+  font-size: large;
+  text-transform: uppercase;
+}
+
+nav .right .algos button:hover {
+  background-color: aqua;
+  cursor: pointer;
+  color: black;
+  border-radius: 20px;
+}
+
+nav .right .algos .butt_locked {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+nav .right .algos .butt_locked:hover {
+  background-color: transparent;
+  cursor: default;
+  color: white;
+}
+
+nav .right .algos .butt_selected {
+  background-color: white;
+  color: black;
+}
+
+nav .right .algos .butt_selected:hover {
+  background-color: white;
+  cursor: default;
+  border-radius: 0px;
+  color: black;
+}
+
+nav .right .algos .butt_unselected:hover {
+  background-color: aqua;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5% 90% 5%;
+      grid-template-columns: 5% 90% 5%;
+  overflow: hidden;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+section #Info_Cont1 {
+  padding: 20%;
+}
+
+section #array_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 60vh;
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+  z-index: -100;
+}
+
+section #Info_Cont2 {
+  padding: 20%;
+}
+
+section #ui-dialog {
+  top: 0;
+  left: 0;
+  padding: .2em;
+  border: 21px;
+}
+
+section #ui-dialog #ui-dialog-titlebar {
+  border: 21px;
+  background-color: red;
+}
+
+section #ui-dialog #ui-dialog-content {
+  border: 0;
+  padding: 20px;
+  font-size: 18px;
+  color: blue;
+  background-color: orange;
+  overflow: hidden;
+}
+
+section #ui-dialog #ui-dialog-buttonpane {
+  text-align: left;
+  margin-top: .1em;
+  height: 0.1em;
+  background-color: orange;
+  background-color: gold;
+}
+
+section #ui-dialog #ui-dialog-buttonpane #ui-dialog-buttonset {
+  float: right;
+}
+
+section #ui-dialog #ui-dialog-buttonpane button {
+  margin: .5em .4em .5em 0;
+  cursor: pointer;
+}
+
+section #ui-dialog #ui-resizable-se {
+  width: 12px;
+  height: 12px;
+  right: -5px;
+  bottom: -5px;
+  background-position: 16px 16px;
+}
+
+section #ui-dialog #ui-draggable-handle {
+  -ms-touch-action: none;
+  touch-action: none;
+}
+
+article {
+  height: 500px;
+  background-color: PowderBlue;
+  margin-left: 200px;
+  margin-right: 200px;
+  border-radius: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 30% 60% 10%;
+      grid-template-rows: 30% 60% 10%;
+  text-transform: capitalize;
+  overflow: hidden;
+}
+
+article #description {
+  text-align: center;
+  padding-top: 20px;
+  overflow: hidden;
+}
+
+article #description #demo {
+  font-size: 50px;
+  text-transform: initial;
+}
+
+article #info #left {
+  float: left;
+  width: 50%;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-transform: initial;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+article #info #left p {
+  font-size: large;
+}
+
+article #info #right {
+  border-left: 5px solid black;
+  float: right;
+  overflow: auto;
+  width: 40%;
+  font-weight: lighter;
+  text-transform: initial;
+  padding-left: 40px;
+}
+
+article #info #right h1 {
+  font-weight: 900;
+  font-size: x-large;
+}
+
+article #info #right p, article #info #right a {
+  padding-top: 20px;
+  font-size: medium;
+  font-weight: 600;
+}
+
+footer {
+  height: 80px;
+  margin: 1% 1%;
+  background-color: #B030B0;
+  margin-top: 100px;
+}
+
+footer p {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+footer a {
+  font-size: 35px;
+  color: #000;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  nav {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .article {
+    border-radius: 0px;
+  }
+}
+/*# sourceMappingURL=s.css.map */
