@@ -318,25 +318,25 @@ footer a {
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
-  nav {
+  nav{
+    position: relative;
+    display: contents;
+  }
+  nav .right .algos #he{
+    margin-left: 500px;
+  }
+  article {
+    margin-left: 0px;
+    margin-right: 0px;
+    overflow: auto;
+    height: 700px;
+  }
+  nav .right .algos{
+    display: contents;
+  }
+  article #info #left, article #info #right {   
     width: 100%;
     padding: 0;
-  }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .article {
-    border-radius: 0px;
   }
 }
 /*# sourceMappingURL=s.css.map */
