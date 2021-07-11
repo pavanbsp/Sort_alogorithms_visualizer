@@ -153,7 +153,7 @@ nav .right .algos {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (16.66667%)[6];
-      grid-template-columns: repeat(6, 16.66667%);
+  grid-template-columns: repeat(6, 16.66667%);
   place-content: center;
   padding: 2% 0%;
   margin-right: -30px;
@@ -245,7 +245,7 @@ article {
   -ms-grid-rows: 30% 60% 10%;
       grid-template-rows: 30% 60% 10%;
   text-transform: capitalize;
-  overflow: hidden;
+  overflow: auto;
 }
 
 article #description {
@@ -331,12 +331,23 @@ footer a {
     overflow: auto;
     height: 700px;
   }
+  nav .right #new{
+    margin-left: 100px;
+  }
+  nav .right #a_size{
+    margin-bottom: 50px;
+  }
   nav .right .algos{
-    display: contents;
+    display: inline-block;
+  }
+  section{
+    padding-top: 2px;
   }
   article #info #left, article #info #right {   
     width: 100%;
     padding: 0;
+    overflow: auto;
   }
 }
+
 /*# sourceMappingURL=s.css.map */
